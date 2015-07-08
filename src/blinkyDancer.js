@@ -1,4 +1,4 @@
-
+/*
 //constructor
 var makeBlinkyDancer = function(top, left, timeBetweenSteps){
   var blinkyDancer = makeDancer(top, left, timeBetweenSteps);
@@ -19,7 +19,7 @@ var makeBlinkyDancer = function(top, left, timeBetweenSteps){
 
   return blinkyDancer;
 };
-
+*/
 
 // PSEUDOCLASSICAL
 
@@ -35,7 +35,7 @@ makeBlinkyDancer.prototype.constructor = makeBlinkyDancer;
 
 //class methods
 makeBlinkyDancer.prototype.step = function () {
-  this.prototype.step.call(this)
+  this.step
   this.$node.toggle();
 };
 
