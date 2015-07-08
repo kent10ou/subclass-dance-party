@@ -1,7 +1,9 @@
+
+//constructor
 var makeBlinkyDancer = function(top, left, timeBetweenSteps){
   var blinkyDancer = makeDancer(top, left, timeBetweenSteps);
 
-  // we plan to overwrite the step function below, but we still want the superclass step behavior to work,
+// we plan to overwrite the step function below, but we still want the superclass step behavior to work,
   // so we must keep a copy of the old version of this function
 
   var oldStep = blinkyDancer.step;
@@ -17,3 +19,25 @@ var makeBlinkyDancer = function(top, left, timeBetweenSteps){
 
   return blinkyDancer;
 };
+
+
+// PSEUDOCLASSICAL
+
+
+
+var makeBlinkyDancer = function (top, left, timeBetweenSteps) {
+  makeDancer.call(this, top, left, timeBetweenSteps);
+};
+
+//pseudoclassical plumbing-boiler plate
+makeBlinkyDancer.prototype = Object.create(makeDancer.prototype);
+makeBlinkyDancer.prototype.constructor = makeBlinkyDancer;
+
+//class methods
+makeBlinkyDancer.prototype.step = function () {
+  this.prototype.step.call(this)
+  this.$node.toggle();
+};
+
+
+
