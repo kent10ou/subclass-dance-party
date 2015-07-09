@@ -29,7 +29,7 @@ $(document).ready(function(){
     );
     $('body').append(dancer.$node);
 
-  
+    
   });
 });
 

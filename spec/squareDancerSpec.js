@@ -15,9 +15,9 @@ describe("squareDancer", function() {
   });
 
   it("should have a step function that makes its node blink", function() {
-    sinon.spy(squareDancer.$node, 'toggle');
+    sinon.spy(squareDancer.$node, 'fadeToggle');
     squareDancer.step();
-    expect(squareDancer.$node.toggle.called).to.be.true;
+    expect(squareDancer.$node.fadeToggle.called).to.be.true;
   });
 
   describe("dance", function(){
