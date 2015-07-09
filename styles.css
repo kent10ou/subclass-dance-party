@@ -3,9 +3,11 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color:#444;
-  background-image:url(http://24.media.tumblr.com/tumblr_m3xigpE8Ms1r2re5xo1_500.gif);
+  background:url(http://25.media.tumblr.com/tumblr_makyl0fXge1qbta3wo1_500.gif) fixed center;
+  height: 100%;
+  width: 100%;
   font-size: 18px;
+  font-color: white;
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
@@ -22,15 +24,15 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:20px solid red;
+  border:0px solid red;
   border-radius:20px;
   position:absolute;
 }
 .tapdancer{
-  border:30px solid white;
+  /*border:30px solid white;*/
 }
 
 .SquareDancer {
-  border: 10px solid green;
+  border: 0px solid green;
   border-radius: 5px;
 }

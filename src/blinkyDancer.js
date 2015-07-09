@@ -1,3 +1,23 @@
+// PSEUDOCLASSICAL
+
+var BlinkyDancer = function (top, left, timeBetweenSteps) {
+  makeDancer.call(this, top, left, timeBetweenSteps);
+  this.$node = $('<span class="dancer BlinkyDancer"><img src="http://rs827.pbsrc.com/albums/zz200/Abbys_Road/Use%20Me/dance11.gif~c200"></span>')
+  this.setPosition(top, left);
+};
+
+//pseudoclassical plumbing-boiler plate
+BlinkyDancer.prototype = Object.create(makeDancer.prototype);
+BlinkyDancer.prototype.constructor = BlinkyDancer;
+
+//class methods
+BlinkyDancer.prototype.step = function () {
+  makeDancer.prototype.step.call(this);
+  this.$node;
+};
+
+
+
 /*
 //constructor
 var makeBlinkyDancer = function(top, left, timeBetweenSteps){
@@ -20,25 +40,6 @@ var makeBlinkyDancer = function(top, left, timeBetweenSteps){
   return blinkyDancer;
 };
 */
-
-// PSEUDOCLASSICAL
-
-
-
-var BlinkyDancer = function (top, left, timeBetweenSteps) {
-  makeDancer.call(this, top, left, timeBetweenSteps);
-  // this.$node = $('<span class="dancer"></span>')
-};
-
-//pseudoclassical plumbing-boiler plate
-BlinkyDancer.prototype = Object.create(makeDancer.prototype);
-BlinkyDancer.prototype.constructor = BlinkyDancer;
-
-//class methods
-BlinkyDancer.prototype.step = function () {
-  makeDancer.prototype.step.call(this);
-  this.$node.toggle("explode");
-};
 
 
 

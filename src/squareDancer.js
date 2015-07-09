@@ -1,6 +1,6 @@
 var SquareDancer = function (top, left, timeBetweenSteps) {
   makeDancer.call(this, top, left, timeBetweenSteps);
-  this.$node = $('<span class="dancer SquareDancer"><img src="http://img1.wikia.nocookie.net/__cb20150120175059/walkingdead/images/3/3b/Seduction_dance_-funny_animation_gif_2290171412.gif"></span>')
+  this.$node = $('<span class="dancer SquareDancer"><img src="https://31.media.tumblr.com/4a43f0686525b965c23279a2aee202ef/tumblr_n93cq6AtTC1snslrwo1_500.gif"></span>')
   this.setPosition(top, left);
 };
 
