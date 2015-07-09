@@ -11,5 +11,9 @@ SquareDancer.prototype.constructor = SquareDancer;
 //class methods
 SquareDancer.prototype.step = function () {
   makeDancer.prototype.step.call(this);
-  this.$node.fadeToggle();
+  // this.$node.fadeToggle();
+};
+
+SquareDancer.prototype.lineup = function () {
+  this.$node.css("left", 0);
 };

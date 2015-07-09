@@ -2,8 +2,9 @@
 
 var BlinkyDancer = function (top, left, timeBetweenSteps) {
   makeDancer.call(this, top, left, timeBetweenSteps);
-  this.$node = $('<span class="dancer BlinkyDancer"><img src="http://rs827.pbsrc.com/albums/zz200/Abbys_Road/Use%20Me/dance11.gif~c200"></span>')
+  this.$node = $('<span class="dancer BlinkyDancer"><img src="http://gifdanceparty.giphy.com/dancers/smooch.gif"></span>')
   this.setPosition(top, left);
+
 };
 
 //pseudoclassical plumbing-boiler plate
@@ -13,9 +14,15 @@ BlinkyDancer.prototype.constructor = BlinkyDancer;
 //class methods
 BlinkyDancer.prototype.step = function () {
   makeDancer.prototype.step.call(this);
-  this.$node.toggle();
+  // this.$node.toggle();
 };
 
+
+// BlinkyDancer.prototype.lineup = function () {
+//   makeDancer.call(this, top, left);
+//   this.setPosition(top, left);
+
+// };
 
 
 /*

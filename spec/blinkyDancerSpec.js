@@ -18,6 +18,7 @@ describe("blinkyDancer", function() {
     sinon.spy(blinkyDancer.$node, 'toggle');
     blinkyDancer.step();
     expect(blinkyDancer.$node.toggle.called).to.be.true;
+
   });
 
   describe("dance", function(){

@@ -3,9 +3,8 @@ body, html{
 }
 body{
   margin: 0px;
-  background:url(http://25.media.tumblr.com/tumblr_makyl0fXge1qbta3wo1_500.gif) fixed center;
-  height: 100%;
-  width: 100%;
+  background-image: url(http://25.media.tumblr.com/tumblr_makyl0fXge1qbta3wo1_500.gif); 
+  background-size: cover;
   font-size: 18px;
   font-color: white;
 }

@@ -29,13 +29,39 @@ $(document).ready(function(){
     );
     $('body').append(dancer.$node);
 
-    console.log('windowdancers" ', window.dancers);
+    window.dancers.push(dancer)
+    console.log('dancer: ', dancer)
   });
 
-  $(".lineupClass").on('click', function (event) {
-    $(".dancer").css("left", 5);
-  })
+  console.log('windowdancers" ', window.dancers);
 
+
+  $(".lineupClass").on('click', function (event) {
+    for (var i = 0; i < dancers.length; i++) {
+      window.dancers[i].lineUp(Math.random() * 10000)
+    }
+  })  
+
+  
+  //make dancers interact with each other
+  //loop through window.dancers array
+  //find every dancer's position/distance from each other using pythagorean theorum
+
+  // for(var i = 0; i < window.dancers.length; i++) {
+  //   for(var j = 0; j < window.dancers.length; j++) {
+  //   var x = window.dancers[i].left;
+  //   var y = window.dancers[i].top;
+  //   var x2 = window.dancers[j].left;
+  //   var y2 = window.dancers[j].left;
+  //   }
+  // }
+
+
+
+
+
+
+  //use jQuery mouseover 
   // $(".dancer").mouseover(function () {
   //   $(this).css("left", 200)
   // })

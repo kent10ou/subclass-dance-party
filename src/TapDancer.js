@@ -13,7 +13,9 @@ TapDancer.prototype.constructor = TapDancer;
 //class methods
 TapDancer.prototype.step = function () {
   makeDancer.prototype.step.call(this);
-  this.$node.toggle();
+  // this.$node.toggle();
 };
 
-
+TapDancer.prototype.lineup = function () {
+  this.$node.css("left", 0);
+};
