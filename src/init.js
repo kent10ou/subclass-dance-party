@@ -28,6 +28,13 @@ $(document).ready(function(){
       Math.random() * 1000
     );
     $('body').append(dancer.$node);
+
+    var tapdancer = new TapDancer(
+      $("body").height() * Math.random(),
+      $("body").width() * Math.random(),
+      Math.random() * 1000
+    );;
+    $('body').append(tapdancer.$node)
   });
 });
 

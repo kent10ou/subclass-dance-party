@@ -27,6 +27,7 @@ var makeBlinkyDancer = function(top, left, timeBetweenSteps){
 
 var BlinkyDancer = function (top, left, timeBetweenSteps) {
   makeDancer.call(this, top, left, timeBetweenSteps);
+  // this.$node = $('<span class="dancer"></span>')
 };
 
 //pseudoclassical plumbing-boiler plate
