@@ -36,10 +36,9 @@ $(document).ready(function(){
     $(".dancer").css("left", 5);
   })
 
-  $(".dancer").mouseover(function () {
-    $(this).css("left", 200)
-  })
+  // $(".dancer").mouseover(function () {
+  //   $(this).css("left", 200)
+  // })
 
 
 });
-
