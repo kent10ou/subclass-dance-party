@@ -43,16 +43,20 @@ var makeDancer = function(top, left, timeBetweenSteps) {
   this.top = top;
   this.left = left;
   this.timeBetweenSteps = timeBetweenSteps;
-  this.step;
-  // this.setPosition(top, left);
+  this.step();
+  this.setPosition(top, left);
   // makeDancer.prototype.step();
   // makeDancer.prototype.setPosition(top, left);
 };
 
+// plumbing
+makeDancer.prototype = Object.create(makeDancer.prototype);
+makeDancer.prototype.constructor = makeDancer;
+
 
 //class methods
-makeDancer.prototype.step = function (){
-  setTimeout(this.step, this.timeBetweenSteps);
+makeDancer.prototype.step = function (timeBetweenSteps){
+  setTimeout(this.step.bind(this), this.timeBetweenSteps);
 };
 
 makeDancer.prototype.setPosition = function (top, left) {

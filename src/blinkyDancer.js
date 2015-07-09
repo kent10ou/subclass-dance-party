@@ -25,17 +25,17 @@ var makeBlinkyDancer = function(top, left, timeBetweenSteps){
 
 
 
-var makeBlinkyDancer = function (top, left, timeBetweenSteps) {
+var BlinkyDancer = function (top, left, timeBetweenSteps) {
   makeDancer.call(this, top, left, timeBetweenSteps);
 };
 
 //pseudoclassical plumbing-boiler plate
-makeBlinkyDancer.prototype = Object.create(makeDancer.prototype);
-makeBlinkyDancer.prototype.constructor = makeBlinkyDancer;
+BlinkyDancer.prototype = Object.create(makeDancer.prototype);
+BlinkyDancer.prototype.constructor = BlinkyDancer;
 
 //class methods
-makeBlinkyDancer.prototype.step = function () {
-  this.step
+BlinkyDancer.prototype.step = function () {
+  makeDancer.prototype.step.call(this);
   this.$node.toggle();
 };
 
