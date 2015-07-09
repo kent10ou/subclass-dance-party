@@ -37,7 +37,7 @@ BlinkyDancer.prototype.constructor = BlinkyDancer;
 //class methods
 BlinkyDancer.prototype.step = function () {
   makeDancer.prototype.step.call(this);
-  this.$node.toggle();
+  this.$node.toggle("explode");
 };
 
 

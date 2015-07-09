@@ -27,6 +27,10 @@ body, a:link, a:visited, a:active{
   position:absolute;
 }
 .tapdancer{
-  border:10px solid blue;
-  position:absolute;
+  border:30px solid white;
+}
+
+.SquareDancer {
+  border: 10px solid green;
+  border-radius: 5px;
 }
