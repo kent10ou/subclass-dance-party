@@ -27,11 +27,12 @@ body, a:link, a:visited, a:active{
   border-radius:20px;
   position:absolute;
 }
-.tapdancer{
-  /*border:30px solid white;*/
-}
 
 .SquareDancer {
   border: 0px solid green;
   border-radius: 5px;
 }
+
+/*.tapdancer{
+  border:30px solid white;
+}*/

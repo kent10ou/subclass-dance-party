@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  //global array of our instantiated dancers
   window.dancers = [];
   
   $(".addDancerButton").on("click", function(event){
@@ -29,13 +30,14 @@ $(document).ready(function(){
     );
     $('body').append(dancer.$node);
 
+    //pushing dancers that appear on our dancefloor to the global window dancers array
     window.dancers.push(dancer)
-    console.log('dancer: ', dancer)
+    //console.log('dancer: ', dancer)
   });
 
-  console.log('windowdancers" ', window.dancers);
+    //console.log('windowdancers" ', window.dancers);
 
-
+  //upon clicking on 'lineup' button, dancers will line up on the left side of screen at varying speeds
   $(".lineupClass").on('click', function (event) {
     for (var i = 0; i < dancers.length; i++) {
       window.dancers[i].lineUp(Math.random() * 10000)
@@ -55,11 +57,6 @@ $(document).ready(function(){
   //   var y2 = window.dancers[j].left;
   //   }
   // }
-
-
-
-
-
 
   //use jQuery mouseover 
   // $(".dancer").mouseover(function () {

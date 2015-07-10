@@ -1,4 +1,4 @@
-// tapDancer
+// PSEUDOCLASSICAL INSTANTIATION PATTERN
 
 var TapDancer = function (top, left, timeBetweenSteps) {
   makeDancer.call(this, top, left, timeBetweenSteps);
@@ -16,6 +16,7 @@ TapDancer.prototype.step = function () {
   // this.$node.toggle();
 };
 
-TapDancer.prototype.lineup = function () {
-  this.$node.css("left", 0);
-};
+//created lineup methods for TapDancer subclass
+// TapDancer.prototype.lineup = function () {
+//   this.$node.css("left", 0);
+// };

@@ -1,3 +1,5 @@
+//PSEUDOCLASSICAL INSTANTIATION PATTERN
+
 var SquareDancer = function (top, left, timeBetweenSteps) {
   makeDancer.call(this, top, left, timeBetweenSteps);
   this.$node = $('<span class="dancer SquareDancer"><img src="https://31.media.tumblr.com/4a43f0686525b965c23279a2aee202ef/tumblr_n93cq6AtTC1snslrwo1_500.gif"></span>')
@@ -14,6 +16,7 @@ SquareDancer.prototype.step = function () {
   // this.$node.fadeToggle();
 };
 
-SquareDancer.prototype.lineup = function () {
-  this.$node.css("left", 0);
-};
+//created lineup methods for SquareDancer subclass
+// SquareDancer.prototype.lineup = function () {
+//   this.$node.css("left", 0);
+// };

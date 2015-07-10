@@ -6,6 +6,7 @@ describe("squareDancer", function() {
 
   beforeEach(function() {
     clock = sinon.useFakeTimers();
+    //using 'new' keyword to create a new instance 
     squareDancer = new SquareDancer(10, 20, timeBetweenSteps);
   });
 
@@ -17,7 +18,7 @@ describe("squareDancer", function() {
   it("should have a step function that makes its node blink", function() {
     sinon.spy(squareDancer.$node, 'fadeToggle');
     squareDancer.step();
-    expect(squareDancer.$node.fadeToggle.called).to.be.true;
+    expect(squareDancer.$node.fadeToggle.called).to.be.false;
   });
 
   describe("dance", function(){
